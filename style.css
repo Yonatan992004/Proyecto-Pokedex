@@ -1,0 +1,135 @@
+body {
+  background: rgb(85, 144, 189);
+  background-image: linear-gradient(to left top, #060922, #080c22, #090e23, #0b1023, #0d1223, #0d1223, #0d1224, #0d1224, #0c1025, #0b0e25, #0a0c26, #090a26);  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.pokemon-block,
+.pokemon-block-back {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(10, 10, 48);
+  color: white;
+  box-shadow: 0 3px 15px rgba(255, 255, 255, 0.407);
+}
+
+.img-container {
+  background-image: url("./blob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(29, 23, 66);
+}
+
+.pokemon-block p {
+  margin: 5px;
+}
+
+.p{
+  color: white;
+}
+
+.name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.pagination {
+  width: auto;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.pagination-cont {
+  margin: auto;
+  width: 12%;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .card-container {
+  transform: rotateY(180deg);
+}
+
+.pokemon-block,
+.pokemon-block-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.pokemon-block-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0%;
+}
+
+.stat-container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  padding: 5px;
+  grid-template-columns: 1fr 2fr ;
+  text-align: left;
+  background-color: rgb(10, 10, 48);
+}
+
+.search{
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  color: #d1d4e7;
+  background-color: rgb(29, 23, 66);
+  box-shadow: 0px 2px 9px white;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.search::placeholder{
+  color: #d1d4e7;
+  font-size: 18px;
+}
+
+.progress {
+  margin-top: 5px;
+  margin-bottom: -10px;
+  margin-right: 12px;
+}
+
+.progress p{
+  margin-top: 10px;
+}
+
